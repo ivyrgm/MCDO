@@ -1,0 +1,62 @@
+<?php include('functions.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration system PHP and MySQL - Create user</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	
+</head>
+<body>
+	<div class="header">
+		<h2>Admin - create user</h2>
+	</div>
+	
+	<form method="post" action="create_user.php">
+
+		<?php echo display_error(); ?>
+
+		<div class="input-group">   
+                        <label><b>First Name</b></label>
+                        <br/>
+                        <input type="text" name="fname" placeholder="First Name" class="form-control" required>
+                        <br/>
+                    </div>
+
+                    <br/>
+                    <div class="input-group">   
+                        <label><b>Last Name</b></label>
+                        <br/>
+                        <input type="text" name="lname" placeholder="Last Name" class="form-control" required>
+                        <br/>
+                    </div>
+
+		<div class="input-group">
+			<label>Username</label>
+			<input type="text" name="username" value="<?php echo $username; ?>">
+		</div>
+		<div class="input-group">
+			<label>Email</label>
+			<input type="email" name="email" value="<?php echo $email; ?>">
+		</div>
+		<div class="input-group">
+			<label>User type</label>
+			<select name="user_type" id="user_type" >
+				<option value=""></option>
+				<option value="admin">Admin</option>
+				<option value="user">Employee</option>
+			</select>
+		</div>
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="password">
+		</div>
+		<div class="input-group">
+			<label>Confirm password</label>
+			<input type="password" name="confirmpw">
+		</div>
+		<div class="input-group">
+			<button type="submit" class="btn" name="register_btn"> + Create user</button>
+		</div>
+	</form>
+</body>
+</html>
