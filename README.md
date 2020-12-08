@@ -9,4 +9,5 @@ MCDO Furniture is a company that sells ready-made furnitures and they also accep
 
 GROUP: VAGABOND (BSIT NW-4B) | 
 Design & Code: Ivy Ruth Mendoza | 
-Documents: Carmela Kaye Javier & Princess Mae Anabeza
+Documents: Carmela Kaye Javier & Princess Mae Añabeza |
+Furniture Design: Princess Mae Añabeza
